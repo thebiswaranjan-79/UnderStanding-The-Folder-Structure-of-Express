@@ -4,7 +4,7 @@ const homePingController = require('../../controller/mainController');
 const router = express.Router();
 
 
-router.get('/ping', homePingController);
+router.get('/home', homePingController);
 
 
 
