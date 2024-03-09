@@ -1,7 +1,11 @@
 const express = require('express');
-const homePingController = require('../controller/mainController');
+const v1Router = require('./v1/index');
+const v2Router = require('./v2/index');
+
 const router = express.Router();
 
-router.get('/home', homePingController);
+router.use('/v1', v1Router);//localhost:3000/api/v1/ping
+router.use('/v2', v2Router);//localhost:3000/api/v2/ping
 
-module.exports = { router };
+
+module.exports =  router ;
