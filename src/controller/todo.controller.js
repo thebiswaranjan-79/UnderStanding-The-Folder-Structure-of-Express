@@ -16,7 +16,7 @@ function createTodo (req, res) {
     todoService.create(todoText);
     return res.json({
         data:'New Todo Created'
-    })
+    });
 }
 
 module.exports = {

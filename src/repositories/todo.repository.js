@@ -1,4 +1,4 @@
-const todos = [];
+const todos = []; // In Moemory Db
 
 class TodoRepository {
     insert(todoText){
